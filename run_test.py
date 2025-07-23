@@ -232,7 +232,7 @@ def parse_args():
     parser.add_argument('--preselect_type', type=str, default='BM25')
     parser.add_argument('--select_number', type=int, default=50, help='select_number from preselection pool.')
     parser.add_argument('--get_false_test_pids', action='store_true', help='get the wrong/right number from results')
-    parser.add_argument('--prompt_method', type=str, default=None, help="cot/sure")
+    parser.add_argument('--prompt_method', type=str, default=None, help="cot")
 
     args = parser.parse_args()
     args.meta_batch_size = args.batch_size
