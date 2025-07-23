@@ -27,7 +27,7 @@ python learn_rank.py --data_root ethos-national_origin --data_root_test ethos-na
 
 ### Example
 ```
-python run_test.py --data_root ethos-national_origin --data_root_test ethos-national_origin --shot_number 5 --label ethos-national_origin_test --cand_number 1000 --train_num 200 --preselection --ckpt [The trained ranker path saved in checkpoints] --cand_ckpt [The saved cand_pids path saved in cand_results]
+python run_test.py --data_root ethos-national_origin --data_root_test ethos-national_origin --shot_number 5 --label ethos-national_origin_test --cand_number 1000 --train_num 200 --preselection --ckpt [The trained ranker path saved in checkpoints] --cand_ckpt [The cand_pids path saved in cand_results]
 ```
 
 
