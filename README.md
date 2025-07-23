@@ -42,4 +42,16 @@ python learn_rank.py --data_root ethos-national_origin --data_root_test ethos-na
 |case_study|Whether to save the case study results.|
 
 
+## Citation
+
+```bibtex
+@inproceedings{yu2025dynamic,
+  title={Dynamic Uncertainty Ranking: Enhancing Retrieval-Augmented In-Context Learning for Long-Tail Knowledge in LLMs},
+  author={Yu, Shuyang and Bao, Runxue and Bhatia, Parminder and Kass-Hout, Taha and Zhou, Jiayu and Xiao, Cao},
+  booktitle={Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
+  pages={8985--8997},
+  year={2025}
+}
+```
+
 
