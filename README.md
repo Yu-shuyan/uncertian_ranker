@@ -27,7 +27,7 @@ python learn_rank.py --data_root ethos-national_origin --data_root_test ethos-na
 
 ### Example
 ```
-python learn_rank.py --data_root ethos-national_origin --data_root_test ethos-national_origin --shot_number 5 --label ethos-national_origin_train --cand_number 1000 --train_num 200 --preselection --ckpt [The trained ranker path saved in checkpoints] --cand_ckpt [The saved cand_pids path saved in cand_results]
+python run_test.py --data_root ethos-national_origin --data_root_test ethos-national_origin --shot_number 5 --label ethos-national_origin_train --cand_number 1000 --train_num 200 --preselection --ckpt [The trained ranker path saved in checkpoints] --cand_ckpt [The saved cand_pids path saved in cand_results]
 ```
 
 
@@ -36,7 +36,7 @@ python learn_rank.py --data_root ethos-national_origin --data_root_test ethos-na
 |Parameter name | Deifinition|
 | ------------- |------------|
 |prompt_format|The prompt format template could be referred to Table 4 in the appendix of our paper. E.g., 'SQ-A' for Pubmedqa, and 'Q-A' for other datasets.|
-|label|The name of this run. Please identify different names for different runs to avoid conflict, as the name of the results file will be based on this parameter.|
+|label|The name of this run. Please identify different names for different runs to avoid conflict, as the name of the results file will be based on this parameter. If you want to resume from previous results, the same label could be adopted here.|
 |cand_ckpt|cand_pids (saved candidate sample pids) root path. You can use the candidate sample pids saved during training for testing.|
 |score_th|Initialize threshold for retriever score. We usually initialize the threshold as 0, the threshold will slowly increase dynamically during training.|
 |case_study|Whether to save the case study results.|
